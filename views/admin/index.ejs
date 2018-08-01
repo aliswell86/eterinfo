@@ -165,16 +165,18 @@
                       <button type="button" class="btn btn-primary"
                       onclick="my.get_excel_list(document.forms['list_form'])">엑셀</button>
 
-                      <div class="form-group" style="margin-top:20px;">
-                          <input type="file" name="filenm" id="filenm" />
-                      </div>
-                      <button type="button" class="btn btn-primary"
-                      onclick="my.set_excel_update(document.forms['list_form'],'1')">엑셀입력</button>
-                      <button type="button" class="btn btn-primary"
-                      onclick="my.set_excel_update(document.forms['list_form'],'2')">엑셀수정</button>
-                      <button type="button" class="btn btn-primary"
-                      onclick="my.set_update(document.forms['list_form'])">커스텀수정</button>
+                      <div style="display:none;">
+                        <div class="form-group" style="margin-top:20px;">
+                            <input type="file" name="filenm" id="filenm" />
+                        </div>
 
+                        <button type="button" class="btn btn-primary"
+                        onclick="my.set_excel_update(document.forms['list_form'],'1')">엑셀입력</button>
+                        <button type="button" class="btn btn-primary"
+                        onclick="my.set_excel_update(document.forms['list_form'],'2')">엑셀수정</button>
+                        <button type="button" class="btn btn-primary"
+                        onclick="my.set_update(document.forms['list_form'])">커스텀수정</button>
+                      </div>
                       <input type="hidden" name="excel_flag" id="excel_flag" />
                     </form>
                   </div>
